@@ -1,0 +1,3 @@
+clickOnBasic://a [text()="Basic Course"]
+clickOnGreen://div[@class="greenbox"]
+frame://div[@class=\"wrapper\"]

@@ -1,0 +1,3 @@
+clickOnBasic://a [@href=\"/tatoc/basic\"]
+clickOnGreen://div[@class=\"greenbox\"]
+frame://div[@class=\"wrapper\"]
