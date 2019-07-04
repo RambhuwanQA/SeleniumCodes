@@ -1,3 +1,9 @@
-clickOnBasic://a [text()="Basic Course"]
-clickOnGreen://div[@class="greenbox"]
-frame://div[@class=\"wrapper\"]
+clickOnBasic:xpath://a [text()="Basic Course"]
+clickOnGreen:xpath://div[@class="greenbox"]
+color1:xpath://div[text()="Box 1"]
+color2:xpath://div[text()="Box 2"]
+rePaint:xpath://a[text()="Repaint Box 2"]
+proceed1:xpath://a[text()="Proceed"]
+dragMe:css:.ui-draggable
+dropBox:xpath://div[text()=\"DROPBOX\"]
+proCeed2:xpath://a[text()=\"Proceed\"]

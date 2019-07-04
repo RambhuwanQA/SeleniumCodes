@@ -7,6 +7,7 @@
         <methods>
           <include name="clickOnGreen"/>
           <include name="launch"/>
+          <include name="end"/>
         </methods>
       </class> <!-- pageObject.BasicTatoc -->
     </classes>

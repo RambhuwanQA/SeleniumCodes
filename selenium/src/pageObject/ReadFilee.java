@@ -5,11 +5,16 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 
 public class ReadFilee {
 
-	public static String getLocatorValue(String locatorName, String fileName) {
+	public static String getLocatorValue(WebDriver driver,String locatorName, String fileName) {
 		StringBuilder contents = new StringBuilder();
 		String file = "src/pageObject/";
 		File filePath = new File(file + File.separator + "xpath.txt");
@@ -36,20 +41,35 @@ public class ReadFilee {
 	 * System.out.println(dataArray); } }
 	 */
 
-	public static String recieve(String locator, String fileName) {
-		String data = ReadFilee.getLocatorValue(locator, fileName);
+	public static WebElement getElement(WebDriver driver, String locator, String fileName) {
+		
+		String data = ReadFilee.getLocatorValue(driver,locator, fileName);
 		String[] dataArray = data.split("->");
 		String locatorValue="";
+		String locatorType="";
 		for (int i = 0; i < dataArray.length; i++) {
 			if (dataArray[i].split(":")[0].equalsIgnoreCase(locator)) {
-				locatorValue=dataArray[i].split(":")[1];
-				System.out.println(dataArray[i].split(":")[1]);
+				locatorType=dataArray[i].split(":")[1];
+				locatorValue=dataArray[i].split(":")[2];
+				//System.out.println(dataArray[i].split(":")[1]);
 			}
 		}
-		return locatorValue;
+		if(locatorType.equals("css")) {
+			return driver.findElement(By.cssSelector(locatorValue));
+		}
+		else if(locatorType.equals("xpath")) {
+			return driver.findElement(By.xpath(locatorValue));
+		}
+	    else if(locatorType.equals("id")) {
+		    return driver.findElement(By.id(locatorValue));
+	    }
+	    else {
+		    return driver.findElement(By.className(locatorValue));
+	    }
 	}
-
+	
 	public static void main(String[] args) {
-		recieve("clickOnBasic", "xpath.txt");
+		WebDriver driver=new ChromeDriver();
+		getElement(driver, "clickOnBasic", "xpath.txt");
 	}
 }
