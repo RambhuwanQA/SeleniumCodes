@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8069" started-at="2019-07-04T10:05:28Z" finished-at="2019-07-04T10:05:36Z">
+  <suite name="Default suite" duration-ms="14740" started-at="2019-07-05T09:55:32Z" finished-at="2019-07-05T09:55:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8069" started-at="2019-07-04T10:05:28Z" finished-at="2019-07-04T10:05:36Z">
+    <test name="Default test" duration-ms="14740" started-at="2019-07-05T09:55:32Z" finished-at="2019-07-05T09:55:47Z">
       <class name="pageObject.BasicTatoc">
-        <test-method status="PASS" signature="launch()[pri:0, instance:pageObject.BasicTatoc@7c16905e]" name="launch" is-config="true" duration-ms="7499" started-at="2019-07-04T10:05:28Z" finished-at="2019-07-04T10:05:36Z">
+        <test-method status="PASS" signature="launch()[pri:0, instance:pageObject.BasicTatoc@7c16905e]" name="launch" is-config="true" duration-ms="14264" started-at="2019-07-05T09:55:32Z" finished-at="2019-07-05T09:55:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launch -->
-        <test-method status="PASS" signature="basicCourse()[pri:1, instance:pageObject.BasicTatoc@7c16905e]" name="basicCourse" duration-ms="184" started-at="2019-07-04T10:05:36Z" finished-at="2019-07-04T10:05:36Z">
+        <test-method status="PASS" signature="basicCourse()[pri:1, instance:pageObject.BasicTatoc@7c16905e]" name="basicCourse" duration-ms="192" started-at="2019-07-05T09:55:46Z" finished-at="2019-07-05T09:55:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicCourse -->
-        <test-method status="PASS" signature="clickOnGreen()[pri:2, instance:pageObject.BasicTatoc@7c16905e]" name="clickOnGreen" duration-ms="357" started-at="2019-07-04T10:05:36Z" finished-at="2019-07-04T10:05:36Z">
+        <test-method status="PASS" signature="clickOnGreen()[pri:2, instance:pageObject.BasicTatoc@7c16905e]" name="clickOnGreen" duration-ms="251" started-at="2019-07-05T09:55:47Z" finished-at="2019-07-05T09:55:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnGreen -->

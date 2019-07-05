@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="17184" started-at="2019-07-05T10:35:04Z" finished-at="2019-07-05T10:35:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="17184" started-at="2019-07-05T10:35:04Z" finished-at="2019-07-05T10:35:21Z">
+      <class name="com.qait.FirstMaven.BasicTatocTest">
+        <test-method status="PASS" signature="launch()[pri:0, instance:com.qait.FirstMaven.BasicTatocTest@4678c730]" name="launch" is-config="true" duration-ms="14511" started-at="2019-07-05T16:05:04Z" finished-at="2019-07-05T16:05:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method status="PASS" signature="clickOnBasicCourse()[pri:1, instance:com.qait.FirstMaven.BasicTatocTest@4678c730]" name="clickOnBasicCourse" duration-ms="491" started-at="2019-07-05T16:05:18Z" finished-at="2019-07-05T16:05:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnBasicCourse -->
+        <test-method status="PASS" signature="clickOnGreen()[pri:2, instance:com.qait.FirstMaven.BasicTatocTest@4678c730]" name="clickOnGreen" duration-ms="1093" started-at="2019-07-05T16:05:19Z" finished-at="2019-07-05T16:05:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnGreen -->
+        <test-method status="PASS" signature="end()[pri:0, instance:com.qait.FirstMaven.BasicTatocTest@4678c730]" name="end" is-config="true" duration-ms="1061" started-at="2019-07-05T16:05:20Z" finished-at="2019-07-05T16:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- com.qait.FirstMaven.BasicTatocTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,4 +1,4 @@
-package pageObject;
+package com.qait.FirstMaven;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -16,7 +16,7 @@ public class ReadFilee {
 
 	public static String getLocatorValue(WebDriver driver,String locatorName, String fileName) {
 		StringBuilder contents = new StringBuilder();
-		String file = "src/pageObject/";
+		String file = "src/main/java/com/qait/FirstMaven";
 		File filePath = new File(file + File.separator + "xpath.txt");
 		System.out.println(filePath);
 
@@ -62,8 +62,7 @@ public class ReadFilee {
 		    return driver.findElement(By.className(locatorValue));
 	    }
 	}
-	
-	public static void main(String[] args) {
+	  public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
 		getElement(driver, "clickOnBasic", "xpath.txt");
 	}
