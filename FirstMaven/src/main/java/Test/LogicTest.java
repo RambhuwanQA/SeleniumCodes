@@ -1,8 +1,10 @@
-package com.qait.FirstMaven;
+package Test;
 
 import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
+
+import com.qait.FirstMaven.Logic;
 
 public class LogicTest {
 

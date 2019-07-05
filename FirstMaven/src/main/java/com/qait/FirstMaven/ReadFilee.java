@@ -46,7 +46,7 @@ public class ReadFilee {
 				locatorType=dataArray[i].split(":")[1];
 				locatorValue=dataArray[i].split(":")[2];
 				//System.out.println(dataArray[i].split(":")[1]);
-				//new
+				
 			}
 		}
 		if(locatorType.equals("css")) {
@@ -62,6 +62,7 @@ public class ReadFilee {
 		    return driver.findElement(By.className(locatorValue));
 	    }
 	}
+   
 	  public static void main(String[] args) {
 		WebDriver driver=new ChromeDriver();
 		getElement(driver, "clickOnBasic", "xpath.txt");
