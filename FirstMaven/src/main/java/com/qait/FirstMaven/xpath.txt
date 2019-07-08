@@ -7,7 +7,7 @@ proceed1:xpath://a[text()="Proceed"]
 dragMe:css:.ui-draggable
 dropBox:xpath://div[text()="DROPBOX"]
 proCeed2:xpath://a[text()="Proceed"]
-popup:xpath://a[text()=\"Launch Popup Window\"]
+popup:xpath://a[text()="Launch Popup Window"]
 message:xpath://input[@id="name"]
 submit:xpath://input[@id="submit"]
 proceed3:xpath://a[text()="Proceed"]

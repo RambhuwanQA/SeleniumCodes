@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qait.FirstMaven.BasicTatocTest">
+      <class name="Test.SeleniumGrid">
         <methods>
-          <include name="clickOnGreen"/>
-          <include name="clickOnBasicCourse"/>
-          <include name="launch"/>
-          <include name="end"/>
+          <include name="setUp"/>
+          <include name="simpleTest"/>
         </methods>
-      </class> <!-- com.qait.FirstMaven.BasicTatocTest -->
+      </class> <!-- Test.SeleniumGrid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

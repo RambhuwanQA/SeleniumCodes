@@ -11,7 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -27,7 +26,7 @@ public class BasicTatocTest extends ReadFilee {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\rambhuwanrajpoot\\Downloads\\chromedriver.exe");
 		driver = new ChromeDriver();
 
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get(url);
 		driver.manage().window().maximize();
 	}
@@ -115,11 +114,11 @@ public class BasicTatocTest extends ReadFilee {
         	driver.switchTo().window(childWindow);
         
         }
-		WebElement message = driver.findElement(By.xpath(""));
+		WebElement message = getElement(driver, "message", "xpath.txt");
 		message.click();
 		message.sendKeys("Text");
 		
-		WebElement submit = driver.findElement(By.xpath(""));
+		WebElement submit = getElement(driver, "submit", "xpath.txt");
 		submit.click();
 		System.out.println("click on submit");
 		
@@ -130,7 +129,7 @@ public class BasicTatocTest extends ReadFilee {
 		proceed2.click();
 		
 		
-		WebElement Gentoken=driver.findElement(By.xpath(""));
+		WebElement Gentoken=getElement(driver, "genToken", "xpath.txt");
 		Gentoken.click();
 		
 		String token=driver.findElement(By.xpath("//span[@id=\"token\"]")).getText().substring(7);
@@ -142,7 +141,7 @@ public class BasicTatocTest extends ReadFilee {
 		
 		System.out.println(" completed");
 	}
-	@AfterTest
+	//@AfterTest
 	public void end() {
 		driver.quit();
 	}
